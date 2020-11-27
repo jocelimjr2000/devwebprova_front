@@ -1,1 +1,23 @@
-<p>create works!</p>
+<div class="conteudo">
+  <mat-card id="credito" class="celula esquerda">
+    <mat-card-title>Cadastrar Veículo</mat-card-title>
+    <div class="campos">
+      <mat-form-field class="campo">
+        <mat-label>Modelo</mat-label>
+        <input matInput name="modelo" [(ngModel)]="modelo" />
+      </mat-form-field>
+
+      <mat-form-field class="campo">
+        <mat-label>Placa</mat-label>
+        <input matInput name="placa" [(ngModel)]="placa" />
+      </mat-form-field>
+
+      <mat-form-field class="campo">
+        <mat-label>Ano</mat-label>
+        <input matInput name="ano" [(ngModel)]="ano" />
+      </mat-form-field>
+    </div>
+  </mat-card>
+</div>
+
+<button mat-raised-button color="warn" (click)="create()">Cadastrar</button>
