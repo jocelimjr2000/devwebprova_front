@@ -3,5 +3,5 @@ export class Vehicle {
   modelo: string;
   placa: string
   ano: Number;
-  createdAt?: Date;
+  criadoEm: Date;
 }
